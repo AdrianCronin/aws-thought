@@ -16,7 +16,7 @@ const Profile = props => {
       try {
         const res = await fetch(`/api/users/${userParam}`);
         const data = await res.json();
-        console.log(data);
+        // console.log(data);
         setThoughts([...data]);
         setIsLoaded(true);
       } catch (error) {
@@ -26,6 +26,7 @@ const Profile = props => {
     fetchData();
   }, [userParam]);
 
+  console.log(thoughts);
   return (
     <div>
       <div className="flex-row mb-3">

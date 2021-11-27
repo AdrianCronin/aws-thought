@@ -21,7 +21,6 @@ const Home = () => {
     }
     fetchData();
   }, []);
-
   return (
     <main>
       <div className="flex-row justify-space-between">
