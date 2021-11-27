@@ -26,7 +26,6 @@ const Profile = props => {
     fetchData();
   }, [userParam]);
 
-  console.log(thoughts);
   return (
     <div>
       <div className="flex-row mb-3">
